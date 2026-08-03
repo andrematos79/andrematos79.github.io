@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>André Gama de Matos | Electronics Test & R&D Engineer</title>
+
+  <meta
+    name="description"
+    content="Professional portfolio of André Gama de Matos — Electronics Test, R&D, Embedded Systems, Industrial AI, Computer Vision and Hardware–Software Integration."
+  >
+
+  <meta name="theme-color" content="#07111f">
+
+  <style>
+    :root {
+      --background: #07111f;
+      --background-light: #0b192b;
+      --card: rgba(15, 35, 57, 0.86);
+      --card-hover: rgba(19, 45, 73, 0.96);
+      --text: #f4f7fb;
+      --muted: #a9b8c9;
+      --primary: #16b8ff;
+      --primary-light: #70d7ff;
+      --green: #4ade80;
+      --border: rgba(112, 215, 255, 0.17);
+      --shadow: 0 22px 55px rgba(0, 0, 0, 0.32);
+      --max-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(22, 184, 255, 0.13), transparent 30%),
+        radial-gradient(circle at 90% 25%, rgba(74, 222, 128, 0.08), transparent 28%),
+        var(--background);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 92px 0;
+    }
+
+    .section-header {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .eyebrow {
+      color: var(--primary);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.18;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 18px;
+    }
+
+    .section-description {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .navigation {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid var(--border);
+      background: rgba(7, 17, 31, 0.88);
+      backdrop-filter: blur(16px);
+    }
+
+    .navigation-content {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-size: 1.05rem;
+      font-weight: 850;
+      letter-spacing: 0.02em;
+    }
+
+    .brand span {
+      color: var(--primary);
+    }
+
+    .navigation-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: var(--muted);
+      font-size: 0.93rem;
+      font-weight: 650;
+    }
+
+    .navigation-links a {
+      transition: color 0.2s ease;
+    }
+
+    .navigation-links a:hover {
+      color: var(--primary-light);
+    }
+
+    .hero {
+      min-height: calc(100vh - 72px);
+      display: flex;
+      align-items: center;
+      padding: 90px 0 75px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+      gap: 70px;
+      align-items: center;
+    }
+
+    .hero-label {
+      color: var(--primary);
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 7vw, 5.8rem);
+      letter-spacing: -0.055em;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero-role {
+      font-size: clamp(1.3rem, 2.8vw, 2rem);
+      color: #dce8f5;
+      font-weight: 720;
+      margin-bottom: 22px;
+    }
+
+    .hero-summary {
+      color: var(--muted);
+      max-width: 760px;
+      font-size: 1.12rem;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+      font-weight: 760;
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: var(--primary);
+      color: #02111d;
+    }
+
+    .button-secondary {
+      border-color: var(--border);
+      background: rgba(255, 255, 255, 0.025);
+      color: var(--text);
+    }
+
+    .button-secondary:hover {
+      border-color: var(--primary);
+      background: rgba(22, 184, 255, 0.08);
+    }
+
+    .profile-card {
+      position: relative;
+      padding: 32px;
+      border: 1px solid var(--border);
+      background:
+        linear-gradient(145deg, rgba(22, 184, 255, 0.09), transparent 42%),
+        var(--card);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .profile-image {
+      width: 178px;
+      height: 178px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 auto 24px;
+      border: 4px solid rgba(112, 215, 255, 0.38);
+      box-shadow: 0 0 0 10px rgba(22, 184, 255, 0.055);
+    }
+
+    .profile-card h3 {
+      text-align: center;
+      font-size: 1.35rem;
+      margin-bottom: 7px;
+    }
+
+    .profile-card .location {
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .profile-facts {
+      display: grid;
+      gap: 12px;
+    }
+
+    .profile-fact {
+      padding: 13px 15px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.025);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .profile-fact strong {
+      color: var(--text);
+    }
+
+    .stats {
+      padding-bottom: 40px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .stat {
+      padding: 25px 22px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .stat-value {
+      color: var(--primary-light);
+      font-size: 2rem;
+      font-weight: 850;
+      line-height: 1;
+      margin-bottom: 9px;
+    }
+
+    .stat-label {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 52px;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
+
+    .highlight-box {
+      padding: 28px;
+      border-left: 4px solid var(--primary);
+      border-radius: 0 16px 16px 0;
+      background: linear-gradient(
+        90deg,
+        rgba(22, 184, 255, 0.12),
+        rgba(22, 184, 255, 0.025)
+      );
+    }
+
+    .highlight-box h3 {
+      margin-bottom: 12px;
+    }
+
+    .highlight-box p {
+      color: var(--muted);
+    }
+
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .expertise-card {
+      min-height: 210px;
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--card);
+      transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+    }
+
+    .expertise-card:hover {
+      transform: translateY(-5px);
+      background: var(--card-hover);
+      border-color: rgba(112, 215, 255, 0.42);
+    }
+
+    .expertise-number {
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 850;
+      margin-bottom: 23px;
+      letter-spacing: 0.1em;
+    }
+
+    .expertise-card h3 {
+      font-size: 1.18rem;
+      margin-bottom: 12px;
+    }
+
+    .expertise-card p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .project-card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--card);
+      transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(112, 215, 255, 0.48);
+    }
+
+    .project-visual {
+      height: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      font-size: 3.7rem;
+      font-weight: 900;
+      letter-spacing: -0.08em;
+    }
+
+    .project-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, transparent 20%, rgba(255, 255, 255, 0.1)),
+        repeating-linear-gradient(
+          90deg,
+          transparent 0,
+          transparent 38px,
+          rgba(255, 255, 255, 0.025) 39px,
+          rgba(255, 255, 255, 0.025) 40px
+        );
+    }
+
+    .project-visual span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .project-usb {
+      background: linear-gradient(135deg, #07315e, #07111f);
+      color: #44c8ff;
+    }
+
+    .project-springs {
+      background: linear-gradient(135deg, #12324b, #081622);
+      color: #70d7ff;
+    }
+
+    .project-sapa {
+      background: linear-gradient(135deg, #123f35, #071b1a);
+      color: #63dc8c;
+    }
+
+    .project-content {
+      padding: 26px;
+    }
+
+    .project-type {
+      color: var(--primary);
+      font-size: 0.72rem;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+
+    .project-content h3 {
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+    }
+
+    .project-content p {
+      color: var(--muted);
+      font-size: 0.94rem;
+      min-height: 104px;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 20px 0;
+    }
+
+    .tag {
+      padding: 5px 9px;
+      border-radius: 999px;
+      color: var(--primary-light);
+      background: rgba(22, 184, 255, 0.09);
+      border: 1px solid rgba(22, 184, 255, 0.17);
+      font-size: 0.74rem;
+      font-weight: 680;
+    }
+
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .project-link {
+      color: var(--primary-light);
+      font-weight: 750;
+      font-size: 0.9rem;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .research-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--card);
+    }
+
+    .research-card h3 {
+      margin-bottom: 12px;
+    }
+
+    .research-card p {
+      color: var(--muted);
+    }
+
+    .research-card .status {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: var(--green);
+      background: rgba(74, 222, 128, 0.08);
+      border: 1px solid rgba(74, 222, 128, 0.2);
+      font-size: 0.76rem;
+      font-weight: 780;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 18px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 28px;
+      padding: 26px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .timeline-period {
+      color: var(--primary-light);
+      font-weight: 780;
+    }
+
+    .timeline-content h3 {
+      margin-bottom: 7px;
+    }
+
+    .timeline-content p {
+      color: var(--muted);
+    }
+
+    .technology-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 11px;
+      margin-top: 30px;
+    }
+
+    .technology {
+      padding: 9px 13px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: rgba(255, 255, 255, 0.025);
+      color: #d5e3f1;
+      font-size: 0.86rem;
+    }
+
+    .contact-box {
+      padding: 55px;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(22, 184, 255, 0.16), transparent 50%),
+        var(--card);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-box h2 {
+      max-width: 800px;
+      margin: 0 auto 18px;
+    }
+
+    .contact-box p {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 auto 28px;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.87rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid {
+        gap: 48px;
+      }
+
+      .profile-card {
+        max-width: 520px;
+      }
+
+      .stats-grid,
+      .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-card {
+        display: grid;
+        grid-template-columns: 0.75fr 1.25fr;
+      }
+
+      .project-visual {
+        height: 100%;
+        min-height: 290px;
+      }
+
+      .project-content p {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .navigation-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 70px;
+      }
+
+      .stats-grid,
+      .expertise-grid,
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-card {
+        display: block;
+      }
+
+      .project-visual {
+        height: 180px;
+        min-height: 0;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .contact-box {
+        padding: 38px 22px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navigation">
+    <div class="container navigation-content">
+      <a class="brand" href="#home">André <span>Matos</span></a>
+
+      <ul class="navigation-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">R&D</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-label">
+            Electronics • Embedded Systems • Industrial Innovation
+          </div>
+
+          <h1>André Gama de <span>Matos</span></h1>
+
+          <div class="hero-role">
+            Electronics Test & R&D Engineer
+          </div>
+
+          <p class="hero-summary">
+            I develop, test and integrate electronic products, embedded
+            systems, industrial automation and AI-based inspection solutions.
+            My career combines 26 years of industrial experience with software,
+            hardware, Computer Vision, Industrial AI and applied research.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#projects">
+              View Projects
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://www.linkedin.com/in/andre-matos-06809aa1/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://github.com/andrematos79"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <aside class="profile-card">
+          <img
+            class="profile-image"
+            src="https://github.com/andrematos79.png"
+            alt="André Gama de Matos"
+          >
+
+          <h3>André Gama de Matos</h3>
+          <div class="location">Manaus, Amazonas, Brazil</div>
+
+          <div class="profile-facts">
+            <div class="profile-fact">
+              <strong>Current:</strong> Resident Researcher in Microelectronics
+              at CBPF
+            </div>
+
+            <div class="profile-fact">
+              <strong>Academic:</strong> M.Sc. Candidate in Electrical
+              Engineering at UEA
+            </div>
+
+            <div class="profile-fact">
+              <strong>Languages:</strong> Portuguese and fluent technical English
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat">
+          <div class="stat-value">26+</div>
+          <div class="stat-label">Years in the electronics industry</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-value">3</div>
+          <div class="stat-label">Featured technology platforms</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-value">2</div>
+          <div class="stat-label">INPI-registered software systems</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-value">R&D</div>
+          <div class="stat-label">Research and industrial innovation focus</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Professional Profile</div>
+          <h2>Engineering experience connected to applied innovation</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am an Electronics Test and R&D Engineer with experience across
+              Test Engineering, Product Engineering, NPI, Reliability, Failure
+              Analysis, industrial automation and technology development.
+            </p>
+
+            <p>
+              My work connects electronic-product knowledge with software
+              engineering, embedded systems, computer vision, Artificial
+              Intelligence, industrial traceability and hardware–software
+              integration.
+            </p>
+
+            <p>
+              I have worked with products and technologies across Broadcast and
+              RF, Consumer Electronics, Storage Devices, Personal Computing,
+              Networking, Retail Technology and Power Electronics.
+            </p>
+          </div>
+
+          <div class="highlight-box">
+            <h3>Current R&D Direction</h3>
+            <p>
+              I am expanding my expertise in digital circuit design and
+              verification, SystemVerilog, RTL, testbenches, communication
+              protocols, ASIC architecture, Cadence tools and PDK-based
+              integrated-circuit development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="expertise">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Core Expertise</div>
+          <h2>Multidisciplinary engineering for industrial systems</h2>
+
+          <p class="section-description">
+            A combination of practical manufacturing experience, electronic
+            engineering, software development and applied research.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <div class="expertise-number">01</div>
+            <h3>Electronics Test Engineering</h3>
+            <p>
+              Functional validation, test development, troubleshooting,
+              root-cause analysis, reliability and production support.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <div class="expertise-number">02</div>
+            <h3>Research & Development</h3>
+            <p>
+              Proofs of concept, technology validation, experimental analysis,
+              technical documentation and industrial deployment.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <div class="expertise-number">03</div>
+            <h3>Embedded Systems</h3>
+            <p>
+              Integration of sensors, microcontrollers, electronics, firmware,
+              communications and web-based control interfaces.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <div class="expertise-number">04</div>
+            <h3>Computer Vision & Industrial AI</h3>
+            <p>
+              Deep Learning, image processing and automated visual inspection
+              for industrial quality control.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <div class="expertise-number">05</div>
+            <h3>Test Automation</h3>
+            <p>
+              Automated workflows, industrial traceability, data collection,
+              production metrics and system integration.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <div class="expertise-number">06</div>
+            <h3>Hardware–Software Integration</h3>
+            <p>
+              Complete solutions connecting physical products, electronics,
+              firmware, software and manufacturing processes.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Featured Projects</div>
+          <h2>Technology developed for real industrial problems</h2>
+
+          <p class="section-description">
+            Projects involving electronic products, intelligent inspection,
+            embedded automation, traceability and applied research.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-visual project-usb">
+              <span>USB</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-type">Computer Vision • Industrial AI</div>
+              <h3>SVC USB</h3>
+
+              <p>
+                Multi-product system for automated inspection of USB-A and
+                USB-C connectors using Deep Learning, industrial traceability
+                and production-line integration.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Traceability</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://github.com/andrematos79/visao-pc-inspecao-usb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub ↗
+                </a>
+
+                <a
+                  class="project-link"
+                  href="https://doi.org/10.5281/zenodo.20531766"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Zenodo DOI ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual project-springs">
+              <span>SVC</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-type">Automated Inspection • R&D</div>
+              <h3>SVC Molas</h3>
+
+              <p>
+                Dual computer vision system for automated left/right spring
+                inspection in smartphone charger covers, with industrial
+                deployment and production traceability.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Streamlit</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">Industrial AI</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://github.com/andrematos79/visao-pc-inspecao-molas-dual"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub ↗
+                </a>
+
+                <a
+                  class="project-link"
+                  href="https://doi.org/10.5281/zenodo.19323586"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Zenodo DOI ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual project-sapa">
+              <span>IoT</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-type">Embedded Systems • IIoT</div>
+              <h3>SAPA IoT</h3>
+
+              <p>
+                ESP32-based embedded platform for autonomous power control,
+                energy management, scheduling and web administration of
+                industrial audio amplifiers.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">ESP32</span>
+                <span class="tag">C++</span>
+                <span class="tag">IoT/IIoT</span>
+                <span class="tag">Energy Management</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://github.com/andrematos79/sapa-iot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub ↗
+                </a>
+
+                <a
+                  class="project-link"
+                  href="https://doi.org/10.5281/zenodo.20464802"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Zenodo DOI ↗
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Research & Intellectual Property</div>
+          <h2>Applied engineering supported by technical evidence</h2>
+
+          <p class="section-description">
+            Software registration, persistent scientific identifiers,
+            experimental validation and controlled technical documentation.
+          </p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card">
+            <h3>Industrial Computer Vision Research</h3>
+            <p>
+              Development and validation of AI-based inspection systems,
+              including datasets, models, real-part testing, industrial
+              integration and production metrics.
+            </p>
+            <span class="status">INDUSTRIAL APPLICATION</span>
+          </article>
+
+          <article class="research-card">
+            <h3>INPI Software Registration</h3>
+            <p>
+              Computer programs formally registered with the Brazilian
+              National Institute of Industrial Property, supporting
+              authorship and technical originality.
+            </p>
+            <span class="status">REGISTERED SOFTWARE</span>
+          </article>
+
+          <article class="research-card">
+            <h3>Zenodo Research Records</h3>
+            <p>
+              Software releases and technical records published with DOI,
+              citation metadata and permanent references for professional and
+              academic use.
+            </p>
+            <span class="status">DOI PUBLICATIONS</span>
+          </article>
+
+          <article class="research-card">
+            <h3>Microelectronics Residency</h3>
+            <p>
+              Current development in digital design, SystemVerilog, RTL
+              verification, communication protocols, ASIC architecture,
+              Cadence tools and PDK-based workflows.
+            </p>
+            <span class="status">CURRENT R&D ACTIVITY</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Professional Journey</div>
+          <h2>From electronic products to intelligent industrial systems</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-period">Current</div>
+
+            <div class="timeline-content">
+              <h3>Resident Researcher in Microelectronics — CBPF</h3>
+              <p>
+                Digital circuits, verification, SystemVerilog, RTL,
+                communication protocols, ASIC architecture and Cadence-based
+                development.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-period">Research</div>
+
+            <div class="timeline-content">
+              <h3>M.Sc. Candidate in Electrical Engineering — UEA</h3>
+              <p>
+                Research involving embedded systems, applied technologies,
+                industrial Computer Vision, automation and intelligent
+                inspection.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-period">26+ years</div>
+
+            <div class="timeline-content">
+              <h3>Electronics Industry</h3>
+              <p>
+                Product Engineering, Test Engineering, NPI, Reliability,
+                Failure Analysis, manufacturing support, automation and
+                Research & Development.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="technology-list">
+          <span class="technology">Python</span>
+          <span class="technology">C/C++</span>
+          <span class="technology">OpenCV</span>
+          <span class="technology">TensorFlow</span>
+          <span class="technology">Keras</span>
+          <span class="technology">Linux</span>
+          <span class="technology">Embedded Systems</span>
+          <span class="technology">ESP32</span>
+          <span class="technology">IoT/IIoT</span>
+          <span class="technology">SystemVerilog</span>
+          <span class="technology">RTL</span>
+          <span class="technology">Cadence</span>
+          <span class="technology">Industrial Automation</span>
+          <span class="technology">Deep Learning</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="eyebrow">Professional Contact</div>
+
+          <h2>
+            Interested in Electronics Test, Embedded Systems or Research &
+            Development?
+          </h2>
+
+          <p>
+            I am interested in opportunities involving technology development,
+            product and test engineering, industrial automation,
+            hardware–software integration and applied Artificial Intelligence.
+          </p>
+
+          <div class="contact-actions">
+            <a
+              class="button button-primary"
+              href="https://www.linkedin.com/in/andre-matos-06809aa1/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contact on LinkedIn
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://github.com/andrematos79"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <span>© 2026 André Gama de Matos.</span>
+      <span>Electronics Test • R&D • Embedded Systems • Industrial AI</span>
+    </div>
+  </footer>
+</body>
+</html>
