@@ -144,7 +144,30 @@
     .navigation-links a:hover {
       color: var(--primary-light);
     }
+    .language-button {
+      min-width: 47px;
+      min-height: 36px;
+      padding: 0 11px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      color: var(--primary-light);
+      background: rgba(22, 184, 255, 0.07);
+      font-size: 0.82rem;
+      font-weight: 800;
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+    }
 
+    .language-button:hover {
+      transform: translateY(-1px);
+      border-color: var(--primary);
+      background: rgba(22, 184, 255, 0.13);
+    }
     .hero {
       min-height: calc(100vh - 72px);
       display: flex;
@@ -722,6 +745,14 @@
         <li><a href="#research">R&D</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      
+      <a
+        class="language-button"
+        href="pt/"
+        aria-label="View website in Portuguese"
+      >
+        PT-BR
+      </a>
     </div>
   </nav>
 
