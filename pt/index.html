@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>André Gama de Matos | Engenheiro de Testes Eletrônicos e P&D</title>
+
+  <meta
+    name="description"
+    content="Portfólio profissional de André Gama de Matos — Engenharia de Testes, P&D, Sistemas Embarcados, IA Industrial, Visão Computacional e Integração Hardware–Software."
+  >
+
+  <meta name="theme-color" content="#07111f">
+
+  <style>
+    :root {
+      --background: #07111f;
+      --background-light: #0b192b;
+      --card: rgba(15, 35, 57, 0.86);
+      --card-hover: rgba(19, 45, 73, 0.96);
+      --text: #f4f7fb;
+      --muted: #a9b8c9;
+      --primary: #16b8ff;
+      --primary-light: #70d7ff;
+      --green: #4ade80;
+      --border: rgba(112, 215, 255, 0.17);
+      --shadow: 0 22px 55px rgba(0, 0, 0, 0.32);
+      --max-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(22, 184, 255, 0.13), transparent 30%),
+        radial-gradient(circle at 90% 25%, rgba(74, 222, 128, 0.08), transparent 28%),
+        var(--background);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 92px 0;
+    }
+
+    .section-header {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .eyebrow {
+      color: var(--primary);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.18;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 18px;
+    }
+
+    .section-description {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .navigation {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid var(--border);
+      background: rgba(7, 17, 31, 0.88);
+      backdrop-filter: blur(16px);
+    }
+
+    .navigation-content {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-size: 1.05rem;
+      font-weight: 850;
+      letter-spacing: 0.02em;
+    }
+
+    .brand span {
+      color: var(--primary);
+    }
+
+    .navigation-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: var(--muted);
+      font-size: 0.93rem;
+      font-weight: 650;
+      margin-left: auto;
+    }
+
+    .navigation-links a {
+      transition: color 0.2s ease;
+    }
+
+    .navigation-links a:hover {
+      color: var(--primary-light);
+    }
+
+    .language-button {
+      min-width: 47px;
+      min-height: 36px;
+      padding: 0 11px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      color: var(--primary-light);
+      background: rgba(22, 184, 255, 0.07);
+      font-size: 0.82rem;
+      font-weight: 800;
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .language-button:hover {
+      transform: translateY(-1px);
+      border-color: var(--primary);
+      background: rgba(22, 184, 255, 0.13);
+    }
+
+    .hero {
+      min-height: calc(100vh - 72px);
+      display: flex;
+      align-items: center;
+      padding: 90px 0 75px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+      gap: 70px;
+      align-items: center;
+    }
+
+    .hero-label {
+      color: var(--primary);
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 7vw, 5.8rem);
+      letter-spacing: -0.055em;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero-role {
+      font-size: clamp(1.3rem, 2.8vw, 2rem);
+      color: #dce8f5;
+      font-weight: 720;
+      margin-bottom: 22px;
+    }
+
+    .hero-summary {
+      color: var(--muted);
+      max-width: 760px;
+      font-size: 1.12rem;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+      font-weight: 760;
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: var(--primary);
+      color: #02111d;
+    }
+
+    .button-secondary {
+      border-color: var(--border);
+      background: rgba(255, 255, 255, 0.025);
+      color: var(--text);
+    }
+
+    .button-secondary:hover {
+      border-color: var(--primary);
+      background: rgba(22, 184, 255, 0.08);
+    }
+
+    .profile-card {
+      position: relative;
+      padding: 32px;
+      border: 1px solid var(--border);
+      background:
+        linear-gradient(145deg, rgba(22, 184, 255, 0.09), transparent 42%),
+        var(--card);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .profile-image {
+      width: 178px;
+      height: 178px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 auto 24px;
+      border: 4px solid rgba(112, 215, 255, 0.38);
+      box-shadow: 0 0 0 10px rgba(22, 184, 255, 0.055);
+    }
+
+    .profile-card h3 {
+      text-align: center;
+      font-size: 1.35rem;
+      margin-bottom: 7px;
+    }
+
+    .profile-card .location {
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .profile-facts {
+      display: grid;
+      gap: 12px;
+    }
+
+    .profile-fact {
+      padding: 13px 15px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.025);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .profile-fact strong {
+      color: var(--text);
+    }
+
+    .stats {
+      padding-bottom: 40px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .stat {
+      padding: 25px 22px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .stat-value {
+      color: var(--primary-light);
+      font-size: 2rem;
+      font-weight: 850;
+      line-height: 1;
+      margin-bottom: 9px;
+    }
+
+    .stat-label {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 52px;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
+
+    .highlight-box {
+      padding: 28px;
+      border-left: 4px solid var(--primary);
+      border-radius: 0 16px 16px 0;
+      background: linear-gradient(
+        90deg,
+        rgba(22, 184, 255, 0.12),
+        rgba(22, 184, 255, 0.025)
+      );
+    }
+
+    .highlight-box h3 {
+      margin-bottom: 12px;
+    }
+
+    .highlight-box p {
+      color: var(--muted);
+    }
+
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .expertise-card {
+      min-height: 210px;
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--card);
+      transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+    }
+
+    .expertise-card:hover {
+      transform: translateY(-5px);
+      background: var(--card-hover);
+      border-color: rgba(112, 215, 255, 0.42);
+    }
+
+    .expertise-number {
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 850;
+      margin-bottom: 23px;
+      letter-spacing: 0.1em;
+    }
+
+    .expertise-card h3 {
+      font-size: 1.18rem;
+      margin-bottom: 12px;
+    }
+
+    .expertise-card p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .project-card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--card);
+      transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(112, 215, 255, 0.48);
+    }
+
+    .project-visual {
+      height: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      font-size: 3.7rem;
+      font-weight: 900;
+      letter-spacing: -0.08em;
+    }
+
+    .project-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, transparent 20%, rgba(255, 255, 255, 0.1)),
+        repeating-linear-gradient(
+          90deg,
+          transparent 0,
+          transparent 38px,
+          rgba(255, 255, 255, 0.025) 39px,
+          rgba(255, 255, 255, 0.025) 40px
+        );
+    }
+
+    .project-visual span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .project-usb {
+      background: linear-gradient(135deg, #07315e, #07111f);
+      color: #44c8ff;
+    }
+
+    .project-springs {
+      background: linear-gradient(135deg, #12324b, #081622);
+      color: #70d7ff;
+    }
+
+    .project-sapa {
+      background: linear-gradient(135deg, #123f35, #071b1a);
+      color: #63dc8c;
+    }
+
+    .project-content {
+      padding: 26px;
+    }
+
+    .project-type {
+      color: var(--primary);
+      font-size: 0.72rem;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+
+    .project-content h3 {
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+    }
+
+    .project-content p {
+      color: var(--muted);
+      font-size: 0.94rem;
+      min-height: 104px;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 20px 0;
+    }
+
+    .tag {
+      padding: 5px 9px;
+      border-radius: 999px;
+      color: var(--primary-light);
+      background: rgba(22, 184, 255, 0.09);
+      border: 1px solid rgba(22, 184, 255, 0.17);
+      font-size: 0.74rem;
+      font-weight: 680;
+    }
+
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .project-link {
+      color: var(--primary-light);
+      font-weight: 750;
+      font-size: 0.9rem;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .research-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--card);
+    }
+
+    .research-card h3 {
+      margin-bottom: 12px;
+    }
+
+    .research-card p {
+      color: var(--muted);
+    }
+
+    .research-card .status {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: var(--green);
+      background: rgba(74, 222, 128, 0.08);
+      border: 1px solid rgba(74, 222, 128, 0.2);
+      font-size: 0.76rem;
+      font-weight: 780;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 18px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 28px;
+      padding: 26px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .timeline-period {
+      color: var(--primary-light);
+      font-weight: 780;
+    }
+
+    .timeline-content h3 {
+      margin-bottom: 7px;
+    }
+
+    .timeline-content p {
+      color: var(--muted);
+    }
+
+    .technology-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 11px;
+      margin-top: 30px;
+    }
+
+    .technology {
+      padding: 9px 13px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: rgba(255, 255, 255, 0.025);
+      color: #d5e3f1;
+      font-size: 0.86rem;
+    }
+
+    .contact-box {
+      padding: 55px;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(22, 184, 255, 0.16), transparent 50%),
+        var(--card);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-box h2 {
+      max-width: 800px;
+      margin: 0 auto 18px;
+    }
+
+    .contact-box p {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 auto 28px;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.87rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid {
+        gap: 48px;
+      }
+
+      .profile-card {
+        max-width: 520px;
+      }
+
+      .stats-grid,
+      .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-card {
+        display: grid;
+        grid-template-columns: 0.75fr 1.25fr;
+      }
+
+      .project-visual {
+        height: 100%;
+        min-height: 290px;
+      }
+
+      .project-content p {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .navigation-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 70px;
+      }
+
+      .stats-grid,
+      .expertise-grid,
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-card {
+        display: block;
+      }
+
+      .project-visual {
+        height: 180px;
+        min-height: 0;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .contact-box {
+        padding: 38px 22px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navigation">
+    <div class="container navigation-content">
+      <a class="brand" href="#inicio">André <span>Matos</span></a>
+
+      <ul class="navigation-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#competencias">Competências</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#pesquisa">P&D</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <a class="language-button" href="../" aria-label="Ver site em inglês">
+        EN
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-label">
+            Eletrônica • Sistemas Embarcados • Inovação Industrial
+          </div>
+
+          <h1>André Gama de <span>Matos</span></h1>
+
+          <div class="hero-role">
+            Engenheiro de Testes Eletrônicos e P&D
+          </div>
+
+          <p class="hero-summary">
+            Desenvolvo, testo e integro produtos eletrônicos, sistemas
+            embarcados, automação industrial e soluções de inspeção baseadas
+            em Inteligência Artificial. Minha trajetória combina 26 anos de
+            experiência industrial com software, hardware, Visão Computacional,
+            IA Industrial e pesquisa aplicada.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#projetos">
+              Ver Projetos
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="../Andre_Gama_de_Matos_CV_EN_Public.pdf"
+              download
+            >
+              Baixar CV (EN)
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://www.linkedin.com/in/andre-matos-06809aa1/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://github.com/andrematos79"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <aside class="profile-card">
+          <img
+            class="profile-image"
+            src="https://github.com/andrematos79.png"
+            alt="André Gama de Matos"
+          >
+
+          <h3>André Gama de Matos</h3>
+          <div class="location">Manaus, Amazonas, Brasil</div>
+
+          <div class="profile-facts">
+            <div class="profile-fact">
+              <strong>Atual:</strong> Pesquisador Residente em Microeletrônica
+              no CBPF
+            </div>
+
+            <div class="profile-fact">
+              <strong>Formação:</strong> Mestrando em Engenharia Elétrica
+              pela UEA
+            </div>
+
+            <div class="profile-fact">
+              <strong>Idiomas:</strong> Português e inglês técnico fluente
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat">
+          <div class="stat-value">26+</div>
+          <div class="stat-label">Anos na indústria eletroeletrônica</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-value">3</div>
+          <div class="stat-label">Plataformas tecnológicas em destaque</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-value">2</div>
+          <div class="stat-label">Sistemas de software registrados no INPI</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-value">P&D</div>
+          <div class="stat-label">Pesquisa e inovação industrial</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Perfil Profissional</div>
+          <h2>Experiência em engenharia conectada à inovação aplicada</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Sou Engenheiro de Testes Eletrônicos e P&D, com experiência em
+              Engenharia de Testes, Engenharia de Produto, NPI, Confiabilidade,
+              Análise de Falhas, automação industrial e desenvolvimento
+              tecnológico.
+            </p>
+
+            <p>
+              Minha atuação conecta conhecimento de produtos eletrônicos com
+              engenharia de software, sistemas embarcados, visão computacional,
+              Inteligência Artificial, rastreabilidade industrial e integração
+              hardware–software.
+            </p>
+
+            <p>
+              Trabalhei com produtos e tecnologias nos segmentos de Broadcast
+              e RF, Eletrônicos de Consumo, Dispositivos de Armazenamento,
+              Computação Pessoal, Redes, Tecnologia para Varejo e Eletrônica
+              de Potência.
+            </p>
+          </div>
+
+          <div class="highlight-box">
+            <h3>Direção Atual em P&D</h3>
+            <p>
+              Estou ampliando minha experiência em projeto e verificação de
+              circuitos digitais, SystemVerilog, RTL, testbenches, protocolos
+              de comunicação, arquitetura ASIC, ferramentas Cadence e
+              desenvolvimento de circuitos integrados com fluxos baseados em
+              PDK.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="competencias">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Competências Principais</div>
+          <h2>Engenharia multidisciplinar para sistemas industriais</h2>
+
+          <p class="section-description">
+            Uma combinação de experiência prática em manufatura, engenharia
+            eletrônica, desenvolvimento de software e pesquisa aplicada.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <div class="expertise-number">01</div>
+            <h3>Engenharia de Testes Eletrônicos</h3>
+            <p>
+              Validação funcional, desenvolvimento de testes, troubleshooting,
+              análise de causa raiz, confiabilidade e suporte à produção.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <div class="expertise-number">02</div>
+            <h3>Pesquisa e Desenvolvimento</h3>
+            <p>
+              Provas de conceito, validação tecnológica, análise experimental,
+              documentação técnica e implantação industrial.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <div class="expertise-number">03</div>
+            <h3>Sistemas Embarcados</h3>
+            <p>
+              Integração de sensores, microcontroladores, eletrônica, firmware,
+              comunicações e interfaces de controle baseadas em web.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <div class="expertise-number">04</div>
+            <h3>Visão Computacional e IA Industrial</h3>
+            <p>
+              Deep Learning, processamento de imagens e inspeção visual
+              automatizada para controle de qualidade industrial.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <div class="expertise-number">05</div>
+            <h3>Automação de Testes</h3>
+            <p>
+              Fluxos automatizados, rastreabilidade industrial, aquisição de
+              dados, métricas de produção e integração de sistemas.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <div class="expertise-number">06</div>
+            <h3>Integração Hardware–Software</h3>
+            <p>
+              Soluções completas conectando produtos físicos, eletrônica,
+              firmware, software e processos de manufatura.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Projetos em Destaque</div>
+          <h2>Tecnologia desenvolvida para problemas industriais reais</h2>
+
+          <p class="section-description">
+            Projetos envolvendo produtos eletrônicos, inspeção inteligente,
+            automação embarcada, rastreabilidade e pesquisa aplicada.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-visual project-usb">
+              <span>USB</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-type">Visão Computacional • IA Industrial</div>
+              <h3>SVC USB</h3>
+
+              <p>
+                Sistema multiproduto para inspeção automatizada de conectores
+                USB-A e USB-C utilizando Deep Learning, rastreabilidade
+                industrial e integração com linha de produção.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Rastreabilidade</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://github.com/andrematos79/visao-pc-inspecao-usb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub ↗
+                </a>
+
+                <a
+                  class="project-link"
+                  href="https://doi.org/10.5281/zenodo.20531766"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  DOI Zenodo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual project-springs">
+              <span>SVC</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-type">Inspeção Automatizada • P&D</div>
+              <h3>SVC Molas</h3>
+
+              <p>
+                Sistema dual de visão computacional para inspeção automatizada
+                das molas esquerda e direita em covers de carregadores, com
+                implantação industrial e rastreabilidade de produção.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Streamlit</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">IA Industrial</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://github.com/andrematos79/visao-pc-inspecao-molas-dual"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub ↗
+                </a>
+
+                <a
+                  class="project-link"
+                  href="https://doi.org/10.5281/zenodo.19323586"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  DOI Zenodo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual project-sapa">
+              <span>IoT</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-type">Sistemas Embarcados • IIoT</div>
+              <h3>SAPA IoT</h3>
+
+              <p>
+                Plataforma embarcada baseada em ESP32 para controle autônomo,
+                gerenciamento energético, agendamento e administração web de
+                amplificadores de áudio industrial.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">ESP32</span>
+                <span class="tag">C++</span>
+                <span class="tag">IoT/IIoT</span>
+                <span class="tag">Gestão de Energia</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://github.com/andrematos79/sapa-iot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub ↗
+                </a>
+
+                <a
+                  class="project-link"
+                  href="https://doi.org/10.5281/zenodo.20464802"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  DOI Zenodo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pesquisa">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Pesquisa e Propriedade Intelectual</div>
+          <h2>Engenharia aplicada sustentada por evidências técnicas</h2>
+
+          <p class="section-description">
+            Registros de software, identificadores científicos persistentes,
+            validação experimental e documentação técnica controlada.
+          </p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card">
+            <h3>Pesquisa em Visão Computacional Industrial</h3>
+            <p>
+              Desenvolvimento e validação de sistemas de inspeção baseados em
+              IA, incluindo datasets, modelos, testes com peças reais,
+              integração industrial e métricas de produção.
+            </p>
+            <span class="status">APLICAÇÃO INDUSTRIAL</span>
+          </article>
+
+          <article class="research-card">
+            <h3>Registro de Software no INPI</h3>
+            <p>
+              Programas de computador formalmente registrados no Instituto
+              Nacional da Propriedade Industrial, comprovando autoria e
+              originalidade técnica.
+            </p>
+            <span class="status">SOFTWARE REGISTRADO</span>
+          </article>
+
+          <article class="research-card">
+            <h3>Registros de Pesquisa no Zenodo</h3>
+            <p>
+              Releases de software e registros técnicos publicados com DOI,
+              metadados de citação e referências permanentes para uso
+              profissional e acadêmico.
+            </p>
+            <span class="status">PUBLICAÇÕES COM DOI</span>
+          </article>
+
+          <article class="research-card">
+            <h3>Residência em Microeletrônica</h3>
+            <p>
+              Desenvolvimento atual em projeto digital, SystemVerilog,
+              verificação RTL, protocolos de comunicação, arquitetura ASIC,
+              ferramentas Cadence e fluxos baseados em PDK.
+            </p>
+            <span class="status">ATIVIDADE ATUAL DE P&D</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Trajetória Profissional</div>
+          <h2>De produtos eletrônicos a sistemas industriais inteligentes</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-period">Atual</div>
+
+            <div class="timeline-content">
+              <h3>Pesquisador Residente em Microeletrônica — CBPF</h3>
+              <p>
+                Circuitos digitais, verificação, SystemVerilog, RTL, protocolos
+                de comunicação, arquitetura ASIC e desenvolvimento com
+                ferramentas Cadence.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-period">Pesquisa</div>
+
+            <div class="timeline-content">
+              <h3>Mestrando em Engenharia Elétrica — UEA</h3>
+              <p>
+                Pesquisa envolvendo sistemas embarcados, tecnologias aplicadas,
+                Visão Computacional Industrial, automação e inspeção
+                inteligente.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-period">26+ anos</div>
+
+            <div class="timeline-content">
+              <h3>Indústria Eletroeletrônica</h3>
+              <p>
+                Engenharia de Produto, Engenharia de Testes, NPI,
+                Confiabilidade, Análise de Falhas, suporte à manufatura,
+                automação e Pesquisa e Desenvolvimento.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="technology-list">
+          <span class="technology">Python</span>
+          <span class="technology">C/C++</span>
+          <span class="technology">OpenCV</span>
+          <span class="technology">TensorFlow</span>
+          <span class="technology">Keras</span>
+          <span class="technology">Linux</span>
+          <span class="technology">Sistemas Embarcados</span>
+          <span class="technology">ESP32</span>
+          <span class="technology">IoT/IIoT</span>
+          <span class="technology">SystemVerilog</span>
+          <span class="technology">RTL</span>
+          <span class="technology">Cadence</span>
+          <span class="technology">Automação Industrial</span>
+          <span class="technology">Deep Learning</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="contact-box">
+          <div class="eyebrow">Contato Profissional</div>
+
+          <h2>
+            Interesse em Engenharia de Testes, Sistemas Embarcados ou Pesquisa
+            e Desenvolvimento?
+          </h2>
+
+          <p>
+            Tenho interesse em oportunidades envolvendo desenvolvimento
+            tecnológico, engenharia de produto e testes, automação industrial,
+            integração hardware–software e Inteligência Artificial aplicada.
+          </p>
+
+          <div class="contact-actions">
+            <a
+              class="button button-primary"
+              href="https://www.linkedin.com/in/andre-matos-06809aa1/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contato pelo LinkedIn
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://github.com/andrematos79"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <span>© 2026 André Gama de Matos.</span>
+      <span>Testes Eletrônicos • P&D • Sistemas Embarcados • IA Industrial</span>
+    </div>
+  </footer>
+</body>
+</html>
