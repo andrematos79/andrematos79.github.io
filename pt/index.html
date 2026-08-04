@@ -373,6 +373,66 @@
       color: var(--muted);
     }
 
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .education-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--card);
+      transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+    }
+
+    .education-card:hover {
+      transform: translateY(-5px);
+      background: var(--card-hover);
+      border-color: rgba(112, 215, 255, 0.42);
+    }
+
+    .education-category {
+      color: var(--primary);
+      font-size: 0.76rem;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .education-item {
+      padding-bottom: 19px;
+      margin-bottom: 19px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .education-item:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+
+    .education-item h3 {
+      font-size: 1.08rem;
+      margin-bottom: 6px;
+    }
+
+    .education-item p {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 5px;
+    }
+
+    .education-item span {
+      color: var(--primary-light);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
     .expertise-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -706,6 +766,7 @@
       }
 
       .stats-grid,
+      .education-grid,
       .expertise-grid,
       .research-grid {
         grid-template-columns: 1fr;
@@ -743,6 +804,7 @@
 
       <ul class="navigation-links">
         <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#formacao">Formação</a></li>
         <li><a href="#competencias">Competências</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#pesquisa">P&D</a></li>
@@ -907,7 +969,94 @@
         </div>
       </div>
     </section>
+    <section class="section" id="formacao">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Formação Acadêmica</div>
 
+          <h2>
+            Formação multidisciplinar conectando eletrônica, automação,
+            software e pesquisa aplicada
+          </h2>
+
+          <p class="section-description">
+            Uma trajetória acadêmica contínua, construída sobre uma base técnica
+            em eletrônica e ampliada por meio da automação industrial, engenharia
+            de software, testes inteligentes, sistemas embarcados e
+            microeletrônica.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <article class="education-card">
+            <div class="education-category">Formação Atual</div>
+
+            <div class="education-item">
+              <h3>Mestrado Profissional em Engenharia Elétrica</h3>
+              <p>Sistemas Embarcados — Universidade do Estado do Amazonas (UEA)</p>
+              <span>2024–2026 | Cursando</span>
+            </div>
+
+            <div class="education-item">
+              <h3>Bacharelado em Engenharia de Controle e Automação</h3>
+              <p>UniFatecie</p>
+              <span>2023–2026 | Cursando</span>
+            </div>
+          </article>
+
+          <article class="education-card">
+            <div class="education-category">Graduações Concluídas</div>
+
+            <div class="education-item">
+              <h3>Bacharelado em Engenharia de Software</h3>
+              <p>UNIASSELVI</p>
+              <span>Concluído em 2025</span>
+            </div>
+
+            <div class="education-item">
+              <h3>Tecnólogo em Automação Industrial</h3>
+              <p>Universidade Paulista (UNIP)</p>
+              <span>Concluído em 2014</span>
+            </div>
+          </article>
+
+          <article class="education-card">
+            <div class="education-category">Especializações</div>
+
+            <div class="education-item">
+              <h3>Desenvolvimento de Testes Automatizados em Sistemas Inteligentes</h3>
+              <p>Universidade do Estado do Amazonas (UEA)</p>
+            </div>
+
+            <div class="education-item">
+              <h3>Engenharia e Arquitetura de Software</h3>
+              <p>PUC Minas</p>
+            </div>
+
+            <div class="education-item">
+              <h3>Engenharia Eletrônica e de Computação</h3>
+              <p>Unyleya</p>
+            </div>
+          </article>
+
+          <article class="education-card">
+            <div class="education-category">Formação Técnica e Capacitação</div>
+
+            <div class="education-item">
+              <h3>Técnico em Eletrônica</h3>
+              <p>Instituto Federal do Amazonas (IFAM)</p>
+              <span>1996–2000</span>
+            </div>
+
+            <div class="education-item">
+              <h3>Capacitação em Microeletrônica</h3>
+              <p>CI Amazônia / iRede</p>
+              <span>320 horas | Concluída em 2026 | Nota final: 9,60</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
     <section class="section" id="competencias">
       <div class="container">
         <div class="section-header">
